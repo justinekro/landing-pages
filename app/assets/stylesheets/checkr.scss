@@ -471,6 +471,10 @@ footer {
 		color:white;
 		font-weight: lighter;
 	}
+	p:hover{
+		text-decoration: underline;
+    	text-decoration-color: #0080FF;
+	}
 	.list-title{
 	color: #8FA1B2;
 	font-weight: bold;
@@ -488,7 +492,4 @@ footer {
 	margin-right:20px;
 }
 
-p:hover{
-	text-decoration: underline;
-    text-decoration-color: #0080FF;
-}
+
