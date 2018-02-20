@@ -4,7 +4,7 @@ body {
 	height:100%;
 	padding: 0px;
 	margin: 0px;
-	font-family:"proxima-nova",sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
 }
 
@@ -14,12 +14,14 @@ h2 {
 	color:#102533;
 }
 
-/* Section Top */
+/* Section 1 */
 
 .section1 {
 	background: asset-data-url('blue.jpg');
 	background-size: cover;
 	height: 770px;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 /* Header Haut */
@@ -126,7 +128,9 @@ h2 {
 	}
 }
 
+
 /* Section de présentation */
+
 
 .container {
 	display: flex;
@@ -136,11 +140,12 @@ h2 {
 }
 
 .catch{
-	width: 526px;
-	position: absolute;
+	display: flex;
+	justify-content: space-between;
 	color:white;
-	margin-top:10%;
+	margin-top:5%;
 	margin-left:5%;
+	margin-right: 5%;
 	h1 {
 		font-size: 40px;
 	}
@@ -163,13 +168,26 @@ h2 {
 	}
 }
 
+.catchleft {
+	padding-top: 100px;
+	width: 500px;
+}
+
+.catchright {
+	video {
+		height:600px;
+
+	}
+}
+
+
 /* Section 2 : logos des clients */
 
 
 .section2 {
 	padding-top: 1%;
 	background-color: white;
-	height:355px;
+	height:300px;
 }
 
 .logos {
@@ -188,7 +206,7 @@ h2 {
 .section3 {
 	padding-top: 1%;
 	background-color: #f5f9fb;
-	height:730px;
+	height:600px;
 	border-top:1px solid #c1c1c1;
 	strong {
 		color:#102533;
@@ -248,7 +266,6 @@ h2 {
 	position:absolute;
 	display: flex;
 	align-items: center;
-
 	width: 300.469px;
 	height: 200px;
 	text-align: center;
@@ -282,7 +299,7 @@ opacity:0.9;
 	justify-content: top;
   	
   	width: 300px;
-  	height: 300px;
+  	height: 250px;
   	background-color: white;
   	padding:2.25% 2.5% 2.5% 2.5%;
   	border:1px solid #e1e1e1;
@@ -290,15 +307,176 @@ opacity:0.9;
   	img {
   		margin-right: 10px;
   	}
+  	.path {
+  		margin-left: 50px;
+  	}
+  	ul {
+  		font-weight: 600;
+  		font-size:15px;
+  		color: rgb(128, 128, 128);
+  		line-height: 1.625;
+  	}
+  	.card-head {
+	display: flex;
+	}
+	.card-bottom {
+	display: flex;
+	text-transform: uppercase;
+	color:rgb(63, 122, 185);
+	font-weight:bold;
+	}
+	.card-bottom:hover {
+	opacity: 0.8;
+	}
+
 }
 
-.card-head {
-	display: flex;
+.card:nth-child(1) {
+	border-bottom-color:rgb(63, 122, 185);
+	border-bottom-width: 4px;
+}
 
+.card:nth-child(2) {
+	border-bottom-color:#6CC496;
+	border-bottom-width: 4px;
+}
+
+.card:nth-child(3) {
+	border-bottom-color:#E9CA2C;
+	border-bottom-width: 4px;
+}
+
+/* Section 6 : testimony section */
+
+.section6 {
+	padding-top: 1%;
+	padding-bottom: 5%;
+	border-top:1px solid #c1c1c1;
+}
+
+.allinfo {
+	display: flex;
+	justify-content: space-around;
+	ul {
+  		font-weight: 600;
+  		font-size:15px;
+  		color: rgb(128, 128, 128);
+  		line-height: 1.625;
+  	}
+  	.path {
+  		margin-left: 50px;
+  	}
+}
+
+.testimony {
+	display: flex;
+	flex-direction: column;
+	width: 560px;
+	height:250px;
 }
 
 .card-bottom {
 	display: flex;
+	text-transform: uppercase;
+	color:rgb(63, 122, 185);
+	font-weight:bold;
 }
 
+.card-bottom:hover {
+	opacity: 0.8;
+}
+
+
+.people {
+	display: flex;
+	align-items: center;
+	img{
+		height: 50px;
+		margin-right: 5px;
+	}
+	p, h3 {
+		line-height: 0;
+	}
+}
+
+/* Section 7 : testimony section */
+
+.section7 {
+	padding-top: 1%;
+	background-color: rgb(63, 122, 185);
+	border-top:1px solid #c1c1c1;
+	height:300px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.discovery {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 0;
+	.text {
+		color:white;
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+	}
+	h2 {
+		color:white;
+	}
+	button 	{
+		text-transform: uppercase;
+		padding: 22px 36px 22px 36px;
+		margin:0;
+		height: 60px;
+		font-size:15px;
+		display: inline-flex;
+		border-radius: 5px;
+		color:rgb(224, 190, 45);
+		border-width: 0px;
+		background-color: rgb(17, 37, 50);
+	}
+	.image {
+		position: relative;
+		top:50px;
+		img {
+		height: 318px;
+		left:0;
+		bottom: 0px;
+		}
+	}
+}
+
+/* Footer */
+
+footer {
+
+	padding-top: 5%;
+	background-color: rgb(17, 37, 50);
+	height: 400px;
+}
+
+.footerlists {
+	display: flex;
+	justify-content: space-around;
+	p {
+		color:white;
+		font-weight: lighter;
+	}
+	.list-title{
+	color: #8FA1B2;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 12px;
+	border-bottom:1px solid #3d4d56;
+	}
+}
+
+.footer2 {
+	display: flex;
+}
+
+.footeritems-left {
+	margin-right:20px;
+}
 
