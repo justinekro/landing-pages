@@ -242,15 +242,18 @@ h2 {
 
 .mosaic-all {
 	display:flex;
+	justify-content: center;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .mosaic {
-	margin:10px;
 	display:flex;
+	padding: 10px;
 	justify-content: center;
 
 	img{
-		height: 200px;
+		height: 180px;
 	}
 	h4 {
 	position:absolute;
@@ -266,9 +269,10 @@ h2 {
 	position:absolute;
 	display: flex;
 	align-items: center;
-	width: 300.469px;
-	height: 200px;
+	width: 270.422px;
+	height: 180px;
 	text-align: center;
+	font-size: 14px;
 	color:white;
 	background-color: rgb(60,121,187);
 	opacity: 0;
@@ -276,6 +280,10 @@ h2 {
 .mosaic:hover .overlay {
 opacity:0.9;
 
+}
+
+.mosaic:hover {
+	color:blue;
 }
 
 /* Section 5 : compliance and security */
@@ -480,3 +488,7 @@ footer {
 	margin-right:20px;
 }
 
+p:hover{
+	text-decoration: underline;
+    text-decoration-color: #0080FF;
+}
