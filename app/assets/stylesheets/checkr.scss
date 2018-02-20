@@ -5,6 +5,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	font-family:"proxima-nova",sans-serif;
+	font-weight: lighter;
 }
 
 /* Section 1 */
@@ -22,7 +23,9 @@ body {
 	p { padding-left:20px;
 		color: white;
 		font-size:14px;
-
+	}
+	p:hover {
+		color:#ddd;
 	}
 }
 
@@ -39,14 +42,19 @@ body {
   	justify-content: flex-start;
   	align-items: center;
   	margin-left: 10%;
+  	color: white;
 	img {
 		width:130px;
+	}
+	p:hover {
+		color:#ddd;
 	}
 }
 
 .dropbtn {
     padding: 16px;
     font-size: 16px;
+    background-color: none;
     border: none;
 }
 
@@ -77,18 +85,33 @@ body {
 }
 
 
-
-
-
-
 .right {
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 10%;
 	align-items: center;
-	p { padding-left:20px;
+	p { padding-right:20px;
 		color: white;
 		font-size:16px;
+	}
+	p:hover {
+		color:#ddd;
+	}
+	button {
+		text-transform: uppercase;
+		padding: 22px 36px 22px 36px;
+		margin:0;
+		font-size:15px;
+		display: inline-flex;
+		border-radius: 5px;
+		color:rgb(224, 190, 45);
+		border-width: 2px;
+		background-color: transparent;
+		border-color: rgb(224, 190, 45);
+	}
+	button:hover{
+		background-color: rgb(224, 190, 45);
+		color:rgb(49, 75, 104)
 	}
 }
 
@@ -99,6 +122,7 @@ body {
 	justify-content: flex-start;
 
 }
+
 .catch{
 	width: 526px;
 	position: absolute;
@@ -111,20 +135,19 @@ body {
 	p {
 		font-size: 18px;
 	}
-	.button {
+	button {
 		background-color:rgb(224, 190, 45);
 		text-transform: uppercase;
-		padding: 5px 10px 5px 10px;
+		padding: 22px 36px 22px 36px;
 		margin:0;
 		font-size:15px;
 		display: inline-flex;
 		border-radius: 5px;
 		color:rgb(49, 75, 104);
-		:hover {
-			opacity:0.8;
-			background-color:rgba(224, 190, 45,0.8);
-
-		}
+		border-width: 0px;
+	}
+	button:hover {
+		opacity:0.8;
 	}
 }
 
