@@ -1,4 +1,4 @@
-<div class="landingtop">
+<div class="section1">
 	<div class="topheader">
 		<p> I am an Appliant </p>
 		<p> API Docs </p>
@@ -12,7 +12,7 @@
 			<%= image_tag 'checkr.png' %>
 			
 			<div class="dropdown">
-				<div class="dropbtn"> Product </div>
+				<div class="dropbtn"> Product ▾ </div>
 				  	<div class="dropdown-content">
 	    				<a href="#">Overview</a>
 	    				<a href="#">Screenings</a>
@@ -23,7 +23,7 @@
   			
 
 	  		<div class="dropdown">
-	  			<div class="dropbtn"> Staffing </div>
+	  			<div class="dropbtn"> Staffing ▾</div>
 				  	<div class="dropdown-content">
 	    				<a href="#">Overview</a>
 	  				</div>
@@ -31,7 +31,7 @@
 
 
 	  		<div class="dropdown">
-	  			<div class="dropbtn"> Industries </div>
+	  			<div class="dropbtn"> Industries ▾</div>
 				  	<div class="dropdown-content">
 	    				<a href="#">Overview</a>
 	    				<a href="#">Contact Centers</a>
@@ -49,7 +49,7 @@
 	  		</div>
 	  		
 	  		<div class="dropdown">	
-	  			<div class="dropbtn"> Resources </div>
+	  			<div class="dropbtn"> Resources ▾ </div>
 				  	<div class="dropdown-content">
 	    				<a href="#">Overview</a>
 	    				<a href="#">Guides & Whites Papers</a>
@@ -78,58 +78,109 @@
 	</div>
 </div>
 
-<section>
+<div class="section2">
 	<h2> More Than 10,000 Businesses Trust Checkr for Their Background Screenings </h2>
-	<p> Logo </p>
-	<p> Logo </p>
-	<p> Logo </p>
-	<p> Logo </p>
-	<p> Logo </p>
-	<p> Logo </p>
-</section>
+	<div class="logos">
+		<%= image_tag 'uber.jpg' %>
+		<%= image_tag 'instacart.png' %>
+		<%= image_tag 'grubhub.png' %>
+		<%= image_tag 'postmates.png' %>
+		<%= image_tag 'zenefits.gif' %>
+		<%= image_tag 'lyft.png' %>
+	</div>
+</div>
 
-<section>
+<div class="section3">
 	<h2> The Next Generation of Background Checks </h2>
 	<div class="top">
 		<div class="valueproposition">
-			<p> Image </p>
-			<p> Mobile-Friendly </p>
+			<%= image_tag 'mobile.svg' %>
+			<p> <strong> Mobile-Friendly </strong></p>
 			<p> Create a positive applicant experience with simple, mobile-friendly onboarding. </p>
 		</div>
 		<div class="valueproposition">
-			<p> Image </p>
-			<p> Easy to Understand </p>
+			<%= image_tag 'communication.svg' %>
+			<p> <strong> Easy to Understand </strong></p>
 			<p> Color-coded reports and an intuitive interface makes it possible to review information faster. See a sample employee background report. </p>
 		</div>
 		<div class="valueproposition">
-			<p> Image </p>
-			<p> Convenient Automation </p>
+			<%= image_tag 'automation.svg' %>
+			<p> <strong> Convenient Automation </strong> </p>
 			<p> Reports and violations are categorized to help you remain compliant with individual assessment requirements. </p>
 		</div>
 	</div>
 	<div class="bottom">
 		<div class="valueproposition">
-			<p> Image </p>
-			<p> Simplified and Compliant Communication </p>
+			<%= image_tag 'communication.svg' %>
+			<p> <strong> Simplified and Compliant Communication</strong> </p>
 			<p> Automated compliance tools allow you to send adverse action communications in seconds, directly from your dashboard. </p>
 		</div>
 		<div class="valueproposition">
-			<p> Image </p>
-			<p> Simplified and Compliant Communication </p>
+			<%= image_tag 'fast.svg' %>
+			<p> <strong>  Simplified and Compliant Communication </strong> </p>
 			<p> Automated compliance tools allow you to send adverse action communications in seconds, directly from your dashboard. </p>
 		</div>
 	</div>
-</section>
+</div>
 
-<section>
+<div class="section4">
 	<h2> Tailored to Fit Your Industry’s Needs </h2>
-</section>
+	<div class="mosaic-all">
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> </div>
+			<h4> <strong> Staffing ➤ </strong> </h4>
+		</div>
+
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> Checkr has built in specific tools to reduce time to hire and manage the complexity of screening candidates in a contact center. </div>
+			<h4> <strong> Contact center ➤ </strong> </h4>
+		</div>
+
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> Checkr has built in specific tools to reduce time to hire and manage the complexity of screening candidates in a contact center. </div>
+			<h4> <strong> Financial services ➤ </strong> </h4>
+		</div>
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> Checkr has built in specific tools to reduce time to hire and manage the complexity of screening candidates in a contact center. </div>
+			<h4> <strong> Retail & Hospitality ➤ </strong> </h4>
+		</div>
+	</div>
+	<div class="mosaic-all">	
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> </div>
+			<h4> <strong> Staffing ➤ </strong> </h4>
+		</div>
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> Checkr has built in specific tools to reduce time to hire and manage the complexity of screening candidates in a contact center. </div>
+			<h4> <strong> Contact center ➤ </strong> </h4>
+		</div>
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> Checkr has built in specific tools to reduce time to hire and manage the complexity of screening candidates in a contact center. </div>
+			<h4> <strong> Financial services ➤ </strong> </h4>
+		</div>
+		<div class="mosaic">
+			<%= image_tag 'mosaic.jpg' %>
+			<div class="overlay"> Checkr has built in specific tools to reduce time to hire and manage the complexity of screening candidates in a contact center. </div>
+			<h4> <strong> Retail & Hospitality ➤ </strong> </h4>
+		</div>
+	</div>	
+</div>
 		
-<section>
-	<div class="card">
-		<div class="card-head">
-			<p> image </p>
-			<h3> Screenings </h3>
+<div class="section5">
+	<h2>Best in Class Compliance and Security</h2>
+	<div class="card-all">
+		<div class="card">
+			<div class="card-head">
+				<%= image_tag 'loupe.svg' %>
+				<h3> Screenings </h3>
+			</div>
 			<ul> 
 				<li> Criminal Records </li>
 				<li> Driving Records </li>
@@ -139,14 +190,14 @@
 			</ul>
 			<div class="card-bottom"> 
 				<p> REVIEW ALL OF CHECKR'S SCREENING SERVICES </p>
-				<p> Flèche </p>
+				<p> ➤ </p>
 			</div>	
 		</div>
-	</div>
-	<div class="card">
-		<div class="card-head">
-			<p> image </p>
-			<h3> Compliance </h3>
+		<div class="card">
+			<div class="card-head">
+				<%= image_tag 'compliance.svg' %>
+				<h3> Compliance </h3>
+			</div>
 			<ul> 
 				<li> Compliant with state and federal laws, including FCRA </li>
 				<li> NAPBS accreditation </li>
@@ -154,14 +205,14 @@
 			</ul>
 			<div class="card-bottom"> 
 				<p> VISIT OUR COMPLIANCE LEARNING CENTER </p>
-				<p> Flèche </p>
+				<p> ➤ </p>
 			</div>	
 		</div>
-	</div>
-	<div class="card">
-		<div class="card-head">
-			<p> image </p>
-			<h3> Security </h3>
+		<div class="card">
+			<div class="card-head">
+				<%= image_tag 'security.svg' %>
+				<h3> Security </h3>
+			</div>
 			<ul> 
 				<li> Data encrypted using bank-grade standards </li>
 				<li> Non-stop monitoring </li>
@@ -169,11 +220,11 @@
 			</ul>
 			<div class="card-bottom"> 
 				<p> SEE WHY WE'RE TRUSTED BY WORLD-CLASS COMPANIES </p>
-				<p> Flèche </p>
+				<p> ➤ </p>
 			</div>	
 		</div>
 	</div>
-</section>
+</div>
 
 <section>
 	<h2> Information for Applicants </h2>

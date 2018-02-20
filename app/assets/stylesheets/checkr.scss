@@ -8,18 +8,25 @@ body {
 	font-weight: lighter;
 }
 
-/* Section 1 */
-.landingtop {
+h2 {
+	text-align: center;
+	font-weight: bold;
+	color:#102533;
+}
+
+/* Section Top */
+
+.section1 {
 	background: asset-data-url('blue.jpg');
 	background-size: cover;
 	height: 770px;
-
 }
 
+/* Header Haut */
 .topheader {
 	display:flex;
 	justify-content: flex-end;
-	margin-right: 10%;
+	margin-right: 5%;
 	p { padding-left:20px;
 		color: white;
 		font-size:14px;
@@ -29,11 +36,12 @@ body {
 	}
 }
 
+/* Header Bas */
 .bottomheader {
 	display:flex;
 	justify-content: space-between;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 16px;
 
 }
 
@@ -41,7 +49,7 @@ body {
   	display: flex;
   	justify-content: flex-start;
   	align-items: center;
-  	margin-left: 10%;
+  	margin-left: 5%;
   	color: white;
 	img {
 		width:130px;
@@ -51,6 +59,7 @@ body {
 	}
 }
 
+/* Dropdown */
 .dropbtn {
     padding: 16px;
     font-size: 16px;
@@ -72,9 +81,10 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-transform: capitalize;
 }
 
-.dropdown-content a:hover {color: #ddd}
+.dropdown-content a:hover {color: #0080FF}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -84,11 +94,12 @@ body {
     color: #ddd;
 }
 
+/* Header bas... à droite ! */
 
 .right {
 	display: flex;
 	justify-content: flex-end;
-	margin-right: 10%;
+	margin-right: 5%;
 	align-items: center;
 	p { padding-right:20px;
 		color: white;
@@ -115,8 +126,9 @@ body {
 	}
 }
 
-.container {
+/* Section de présentation */
 
+.container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -128,7 +140,7 @@ body {
 	position: absolute;
 	color:white;
 	margin-top:10%;
-	margin-left:10%;
+	margin-left:5%;
 	h1 {
 		font-size: 40px;
 	}
@@ -150,4 +162,143 @@ body {
 		opacity:0.8;
 	}
 }
+
+/* Section 2 : logos des clients */
+
+
+.section2 {
+	padding-top: 1%;
+	background-color: white;
+	height:355px;
+}
+
+.logos {
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	img {
+		width:141px;
+	}
+
+}
+
+/* Section 3 : la value proposition */
+
+.section3 {
+	padding-top: 1%;
+	background-color: #f5f9fb;
+	height:730px;
+	border-top:1px solid #c1c1c1;
+	strong {
+		color:#102533;
+	}
+	p {
+		color:gray;
+	}
+
+}
+
+.top, .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.valueproposition {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width:300px;
+	text-align: center
+}
+
+/* Section 4 : Mosaique d'images */
+
+.section4 {
+	padding-top: 1%;
+	padding-bottom: 5%;
+	border-top:1px solid #c1c1c1;
+}
+
+.mosaic-all {
+	display:flex;
+}
+
+.mosaic {
+	margin:10px;
+	display:flex;
+	justify-content: center;
+
+	img{
+		height: 200px;
+	}
+	h4 {
+	position:absolute;
+	width: 200px;
+	text-align: center;
+	margin-top:150px;
+	color:white;
+	text-transform: uppercase;
+	}
+}
+
+.overlay {
+	position:absolute;
+	display: flex;
+	align-items: center;
+
+	width: 300.469px;
+	height: 200px;
+	text-align: center;
+	color:white;
+	background-color: rgb(60,121,187);
+	opacity: 0;
+}
+.mosaic:hover .overlay {
+opacity:0.9;
+
+}
+
+/* Section 5 : compliance and security */
+
+.section5 {
+	padding-top: 1%;
+	background-color: #f5f9fb;
+	height:536px;
+	border-top:1px solid #c1c1c1;
+}
+
+.card-all {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.card {
+	display:flex;
+	flex-direction: column;
+	justify-content: top;
+  	
+  	width: 300px;
+  	height: 300px;
+  	background-color: white;
+  	padding:2.25% 2.5% 2.5% 2.5%;
+  	border:1px solid #e1e1e1;
+
+  	img {
+  		margin-right: 10px;
+  	}
+}
+
+.card-head {
+	display: flex;
+
+}
+
+.card-bottom {
+	display: flex;
+}
+
 
